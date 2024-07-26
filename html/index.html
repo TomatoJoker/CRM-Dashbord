@@ -10,7 +10,11 @@
   <link rel="icon" type="image/x-icon" sizes="32x32" href="./images/favicon/favicon-32x32.png"/>
   <link rel="icon" type="image/x-icon" sizes="16x16" href="./images/favicon/favicon-16x16.png"/>
   <link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="">
-  <link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin="">
+  <link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="/fonts/Montserrat/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="/fonts/Montserrat/Montserrat-Medium2.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="/fonts/Montserrat/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="/fonts/Montserrat/Montserrat-SemiBold2.woff2" as="font" type="font/woff2" crossorigin="">
   
     <link rel="stylesheet" type="text/css" href="./css/vendors/your-name-vendor-style-name.min.css">
   
@@ -20,10 +24,86 @@
 <body>
 
     <div class="wrapper">
-        
-        <main class="main">
+        <header class="header">
+    <div class="header__container container">
+        <div class="header__inner">
+            <nav class="header__top">
+                <span class="logo">
+                    <img src="./images/logo.svg" width="37" height="37" alt="">
+                    <span class="logo__name">Dashboard</span>
+                    <span class="logo__version">v.01</span>
+                </span>
+                
+                <ul class="menu">
+                    
+                        <li class="menu__item">
+                            <a href="#">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#key-square"></use>
+                                </svg>
+                                Customers
+                            </a>
+                        </li>
+                    
+                        <li class="menu__item">
+                            <a href="#">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#3d-square"></use>
+                                </svg>
+                                Customers
+                            </a>
+                        </li>
+                    
+                        <li class="menu__item">
+                            <a href="#">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#user-square"></use>
+                                </svg>
+                                Customers
+                            </a>
+                        </li>
+                    
+                        <li class="menu__item">
+                            <a href="#">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#wallet-money"></use>
+                                </svg>
+                                Customers
+                            </a>
+                        </li>
+                    
+                        <li class="menu__item">
+                            <a href="#">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#discount-shape"></use>
+                                </svg>
+                                Customers
+                            </a>
+                        </li>
+                    
+                        <li class="menu__item">
+                            <a href="#">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#message-question"></use>
+                                </svg>
+                                Customers
+                            </a>
+                        </li>
+                    
+                </ul>
+            </nav>
+            <div class="header__account">
+                <img class="header__account-img" width="42" height="42" src="./images/men.png" alt="">
+                <div class="header__account-name">
+                    <span class="header__name">Evano</span>
+                    <span class="header__position">Project Manager</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="main-wrapper">
             <div class="container">
-                Start
             </div>
         </main>
         

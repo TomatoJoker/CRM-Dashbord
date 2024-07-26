@@ -1,0 +1,50 @@
+.header {
+  background: $light;
+  padding: 36px 28px;
+  flex-shrink: 0;
+  display: flex;
+
+  .logo {
+
+    margin-bottom: 64px;
+
+  }
+
+  &__container,
+  &__inner {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__inner {
+    justify-content: space-between;
+  }
+
+  &__account {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__account-img {
+    flex-shrink: 0;
+  }
+
+  &__account-name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+
+  &__position {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+}

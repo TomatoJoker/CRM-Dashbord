@@ -1,0 +1,58 @@
+<header class="header">
+    <div class="header__container container">
+        <div class="header__inner">
+            <nav class="header__top">
+                <span class="logo">
+                    <img src="./images/logo.svg" width="37" height="37" alt="">
+                    <span class="logo__name">Dashboard</span>
+                    <span class="logo__version">v.01</span>
+                </span>
+                {% set menu = [
+                            {
+                                icon: 'key-square',
+                                title: 'Dashboard'
+                            },
+                            {
+                                icon: '3d-square',
+                                title: 'Product'
+                            },
+                            {
+                                icon: 'user-square',
+                                title: 'Customers'
+                            },
+                            {
+                                icon: 'wallet-money',
+                                title: 'Income'
+                            },
+                            {
+                                icon: 'discount-shape',
+                                title: 'Promote'
+                            },
+                            {
+                                icon: 'message-question',
+                                title: 'Help'
+                            }
+                        ] %}
+                <ul class="menu">
+                    {% for menuItem in menu %}
+                        <li class="menu__item">
+                            <a href="#">
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#{{ menuItem.icon }}"></use>
+                                </svg>
+                                Customers
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+            <div class="header__account">
+                <img class="header__account-img" width="42" height="42" src="./images/men.png" alt="">
+                <div class="header__account-name">
+                    <span class="header__name">Evano</span>
+                    <span class="header__position">Project Manager</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
