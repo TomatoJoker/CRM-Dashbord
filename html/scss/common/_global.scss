@@ -16,6 +16,11 @@ a {
   color: inherit;
 }
 
+input {
+  border: none;
+  padding: 0;
+}
+
 .container {
   max-width: $site-container;
   width: 100%;

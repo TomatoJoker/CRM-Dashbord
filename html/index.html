@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="./css/vendors/your-name-vendor-style-name.min.css">
   
   <link rel="stylesheet" type="text/css" href="./css/common.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/home.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/dashboard-page.min.css">
 </head>
 <body>
 
@@ -103,8 +103,162 @@
     </div>
 </header>
         <main class="main-wrapper">
-            <div class="container">
-            </div>
+            <section class="dashboard-section">
+                <div class="container">
+                    <h1 class="section-dashboard__main-title h1-title">Hello Evano 👋🏼,</h1>
+                    <div class="dashboard-section__inner">
+                        <div class="dashboard-section__top">
+                            <div class="dashboard-section__title-wrapper">
+                                <h2 class="dashboard-section__title h2-title">All Customers</h2>
+                                <div class="dashboard-section__subtitle">
+                                    Active Members
+                                </div>
+                            </div>
+                            <div class="dashboard-section__input-wrapper input">
+                                <input type="text" placeholder="Search" class="input__item">
+                                <button type="button" class="button__full-reset input__btn">
+                                    <svg width="24" height="24">
+                                        <use href="./images/sprite.svg#search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="dashboard-section__bottom">
+                            <table class="dashboard-section__table">
+                                <thead>
+                                    <tr class="dashboard-section__heading-wrapper grid">
+                                    <th class="dashboard-section__title grid__name">
+                                        Customer Name
+                                    </th>
+                                    <th class="dashboard-section__title grid__company">
+                                        Company
+                                    </th>
+                                    <th class="dashboard-section__title grid__number">
+                                        Phone Number
+                                    </th>
+                                    <th class="dashboard-section__title grid__email">
+                                        Email
+                                    </th>
+                                    <th class="dashboard-section__title grid__country">
+                                        Country
+                                    </th>
+                                    <th class="dashboard-section__status grid__status">
+                                        Status
+                                    </th>
+                                </tr>
+                                </thead>
+                                
+                                <tbody>
+                                
+                                    <tr class="dashboard-section__content grid">
+                                        <td class="dashboard-section__content-item grid__name">Jane Cooper</td>
+                                        <td class="dashboard-section__content-item grid__company">Microsoft</td>
+                                        <td class="dashboard-section__content-item grid__number">(225) 555-0118</td>
+                                        <td class="dashboard-section__content-item grid__email"><a href="mailto:jane@microsoft.com">jane@microsoft.com</a></td>
+                                        <td class="dashboard-section__content-item grid__country">United States</td>
+                                        <td class="dashboard-section__content-status grid__status">
+                                            <span class="tab tab__active">Active</span>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr class="dashboard-section__content grid">
+                                        <td class="dashboard-section__content-item grid__name">Floyd Miles</td>
+                                        <td class="dashboard-section__content-item grid__company">Yahoo</td>
+                                        <td class="dashboard-section__content-item grid__number">(205) 555-0100</td>
+                                        <td class="dashboard-section__content-item grid__email"><a href="mailto:floyd@yahoo.com">floyd@yahoo.com</a></td>
+                                        <td class="dashboard-section__content-item grid__country">Kiribati</td>
+                                        <td class="dashboard-section__content-status grid__status">
+                                            <span class="tab tab__inactive">Inactive</span>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr class="dashboard-section__content grid">
+                                        <td class="dashboard-section__content-item grid__name">Ronald Richards</td>
+                                        <td class="dashboard-section__content-item grid__company">Adobe</td>
+                                        <td class="dashboard-section__content-item grid__number">(205) 555-0107</td>
+                                        <td class="dashboard-section__content-item grid__email"><a href="mailto:ronald@adobe.com">ronald@adobe.com</a></td>
+                                        <td class="dashboard-section__content-item grid__country">Israel</td>
+                                        <td class="dashboard-section__content-status grid__status">
+                                            <span class="tab tab__inactive">Inactive</span>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr class="dashboard-section__content grid">
+                                        <td class="dashboard-section__content-item grid__name">Marvin McKinney</td>
+                                        <td class="dashboard-section__content-item grid__company">Tesla</td>
+                                        <td class="dashboard-section__content-item grid__number">(252) 555-0126</td>
+                                        <td class="dashboard-section__content-item grid__email"><a href="mailto:marvin@tesla.com">marvin@tesla.com</a></td>
+                                        <td class="dashboard-section__content-item grid__country">Iran</td>
+                                        <td class="dashboard-section__content-status grid__status">
+                                            <span class="tab tab__active">Active</span>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr class="dashboard-section__content grid">
+                                        <td class="dashboard-section__content-item grid__name">Jerome Bell</td>
+                                        <td class="dashboard-section__content-item grid__company">`Google</td>
+                                        <td class="dashboard-section__content-item grid__number">(629) 555-0129</td>
+                                        <td class="dashboard-section__content-item grid__email"><a href="mailto:jerome@google.com">jerome@google.com</a></td>
+                                        <td class="dashboard-section__content-item grid__country">Réunion</td>
+                                        <td class="dashboard-section__content-status grid__status">
+                                            <span class="tab tab__active">Active</span>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr class="dashboard-section__content grid">
+                                        <td class="dashboard-section__content-item grid__name">Kathryn Murphy</td>
+                                        <td class="dashboard-section__content-item grid__company">Microsoft</td>
+                                        <td class="dashboard-section__content-item grid__number">(406) 555-0120</td>
+                                        <td class="dashboard-section__content-item grid__email"><a href="mailto:kathryn@microsoft.com">kathryn@microsoft.com</a></td>
+                                        <td class="dashboard-section__content-item grid__country">Curaçao</td>
+                                        <td class="dashboard-section__content-status grid__status">
+                                            <span class="tab tab__active">Active</span>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr class="dashboard-section__content grid">
+                                        <td class="dashboard-section__content-item grid__name">Jacob Jones</td>
+                                        <td class="dashboard-section__content-item grid__company">Yahoo</td>
+                                        <td class="dashboard-section__content-item grid__number">(208) 555-0112</td>
+                                        <td class="dashboard-section__content-item grid__email"><a href="mailto:jacob@yahoo.com">jacob@yahoo.com</a></td>
+                                        <td class="dashboard-section__content-item grid__country">Brazil</td>
+                                        <td class="dashboard-section__content-status grid__status">
+                                            <span class="tab tab__active">Active</span>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr class="dashboard-section__content grid">
+                                        <td class="dashboard-section__content-item grid__name">Kristin Watson</td>
+                                        <td class="dashboard-section__content-item grid__company">Facebook</td>
+                                        <td class="dashboard-section__content-item grid__number">(704) 555-0127</td>
+                                        <td class="dashboard-section__content-item grid__email"><a href="mailto:ristin@facebook.com">ristin@facebook.com</a></td>
+                                        <td class="dashboard-section__content-item grid__country">Åland Islands</td>
+                                        <td class="dashboard-section__content-status grid__status">
+                                            <span class="tab tab__inactive">Inactive</span>
+                                        </td>
+                                    </tr>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="dashboard-section__pagination-wrapper">
+                            <p>Showing data 1 to 8 of  256K entries</p>
+                            <div class="dashboard-section__pagination pagination">
+                                <a href="#" class="button__full-reset pagination__btn"><</a>
+                                <ul class="pagination__inner">
+                                    <li class="pagination__item"><span>1</span></li>
+                                    <li class="pagination__item"><a href="#">2</a></li>
+                                    <li class="pagination__item"><a href="#">3</a></li>
+                                    <li class="pagination__item"><a href="#">4</a></li>
+                                    <li class="pagination__item">...</li>
+                                    <li class="pagination__item"><a href="#">40</a></li>
+                                </ul>
+                                <a href="#" class="pagination__btn">></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         
     </div>

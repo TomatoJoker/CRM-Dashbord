@@ -3,6 +3,17 @@
   padding: 36px 28px;
   flex-shrink: 0;
   display: flex;
+  width: 100%;
+  transform: scaleX(0);
+  position: absolute;
+
+  @include min-media(1200) {
+
+    position: static;
+    transform: scaleX(1);
+    max-width: $header-width;
+
+  }
 
   .logo {
 

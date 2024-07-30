@@ -1,0 +1,42 @@
+.dashboard-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__main-title {
+
+    &:not(:last-child) {
+      margin-bottom: 55px;
+    }
+
+  }
+
+  &__subtitle {
+    margin-top: 7px;
+    color: $subtitle-color;
+  }
+
+  &__inner {
+
+    background: $light;
+    border-radius: 30px;
+    padding: 38px 30px;
+
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+    
+  }
+
+  &__table {
+    display: block;
+  }
+}

@@ -1,13 +1,155 @@
 {% set title = 'Home' %}
-{% set stylePage = 'home' %}
-{% set stylesVendor = ['your-name-vendor-style-name'] %} {#include style vendor#}
+{% set stylePage = 'dashboard-page' %}
+{% set stylesVendor = ['your-name-vendor-style-name'] %} {# include style vendor #}
 {% extends 'layouts/layout.njk' %}
 {% block content %}
     <div class="wrapper">
         {% include 'components/header.njk' %}
         <main class="main-wrapper">
-            <div class="container">
-            </div>
+            <section class="dashboard-section">
+                <div class="container">
+                    <h1 class="section-dashboard__main-title h1-title">Hello Evano 👋🏼,</h1>
+                    <div class="dashboard-section__inner">
+                        <div class="dashboard-section__top">
+                            <div class="dashboard-section__title-wrapper">
+                                <h2 class="dashboard-section__title h2-title">All Customers</h2>
+                                <div class="dashboard-section__subtitle">
+                                    Active Members
+                                </div>
+                            </div>
+                            <div class="dashboard-section__input-wrapper input">
+                                <input type="text" placeholder="Search" class="input__item">
+                                <button type="button" class="button__full-reset input__btn">
+                                    <svg width="24" height="24">
+                                        <use href="./images/sprite.svg#search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="dashboard-section__bottom">
+                            <table class="dashboard-section__table">
+                                <thead>
+                                    <tr class="dashboard-section__heading-wrapper grid">
+                                    <th class="dashboard-section__title grid__name">
+                                        Customer Name
+                                    </th>
+                                    <th class="dashboard-section__title grid__company">
+                                        Company
+                                    </th>
+                                    <th class="dashboard-section__title grid__number">
+                                        Phone Number
+                                    </th>
+                                    <th class="dashboard-section__title grid__email">
+                                        Email
+                                    </th>
+                                    <th class="dashboard-section__title grid__country">
+                                        Country
+                                    </th>
+                                    <th class="dashboard-section__status grid__status">
+                                        Status
+                                    </th>
+                                </tr>
+                                </thead>
+                                {% set dashboardInfo = [
+                                    {
+                                        title: 'Jane Cooper',
+                                        company: 'Microsoft',
+                                        number: '(225) 555-0118',
+                                        email: 'jane@microsoft.com',
+                                        country: 'United States',
+                                        status: 'Active'
+                                    },
+                                    {
+                                        title: 'Floyd Miles',
+                                        company: 'Yahoo',
+                                        number: '(205) 555-0100',
+                                        email: 'floyd@yahoo.com',
+                                        country: 'Kiribati',
+                                        status: 'Inactive'
+                                    },
+                                    {
+                                        title: 'Ronald Richards',
+                                        company: 'Adobe',
+                                        number: '(205) 555-0107',
+                                        email: 'ronald@adobe.com',
+                                        country: 'Israel',
+                                        status: 'Inactive'
+                                    },
+                                    {
+                                        title: 'Marvin McKinney',
+                                        company: 'Tesla',
+                                        number: '(252) 555-0126',
+                                        email: 'marvin@tesla.com',
+                                        country: 'Iran',
+                                        status: 'Active'
+                                    },
+                                    {
+                                        title: 'Jerome Bell',
+                                        company: '`Google',
+                                        number: '(629) 555-0129',
+                                        email: 'jerome@google.com',
+                                        country: 'Réunion',
+                                        status: 'Active'
+                                    },
+                                    {
+                                        title: 'Kathryn Murphy',
+                                        company: 'Microsoft',
+                                        number: '(406) 555-0120',
+                                        email: 'kathryn@microsoft.com',
+                                        country: 'Curaçao',
+                                        status: 'Active'
+                                    },
+                                    {
+                                        title: 'Jacob Jones',
+                                        company: 'Yahoo',
+                                        number: '(208) 555-0112',
+                                        email: 'jacob@yahoo.com',
+                                        country: 'Brazil',
+                                        status: 'Active'
+                                    },
+                                    {
+                                        title: 'Kristin Watson',
+                                        company: 'Facebook',
+                                        number: '(704) 555-0127',
+                                        email: 'ristin@facebook.com',
+                                        country: 'Åland Islands',
+                                        status: 'Inactive'
+                                    }
+                                ] %}
+                                <tbody>
+                                {% for item in dashboardInfo %}
+                                    <tr class="dashboard-section__content grid">
+                                        <td class="dashboard-section__content-item grid__name">{{ item.title }}</td>
+                                        <td class="dashboard-section__content-item grid__company">{{ item.company }}</td>
+                                        <td class="dashboard-section__content-item grid__number">{{ item.number }}</td>
+                                        <td class="dashboard-section__content-item grid__email"><a href="mailto:{{ item.email }}">{{ item.email }}</a></td>
+                                        <td class="dashboard-section__content-item grid__country">{{ item.country }}</td>
+                                        <td class="dashboard-section__content-status grid__status">
+                                            <span class="tab{{ ' tab__active' if item.status === 'Active' }}{{ ' tab__inactive' if item.status === 'Inactive' }}">{{ item.status }}</span>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="dashboard-section__pagination-wrapper">
+                            <p>Showing data 1 to 8 of  256K entries</p>
+                            <div class="dashboard-section__pagination pagination">
+                                <a href="#" class="button__full-reset pagination__btn"><</a>
+                                <ul class="pagination__inner">
+                                    <li class="pagination__item"><span>1</span></li>
+                                    <li class="pagination__item"><a href="#">2</a></li>
+                                    <li class="pagination__item"><a href="#">3</a></li>
+                                    <li class="pagination__item"><a href="#">4</a></li>
+                                    <li class="pagination__item">...</li>
+                                    <li class="pagination__item"><a href="#">40</a></li>
+                                </ul>
+                                <a href="#" class="pagination__btn">></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         {% include 'components/footer.njk' %}
     </div>

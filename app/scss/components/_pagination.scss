@@ -1,0 +1,43 @@
+.pagination {
+  $gap: 12px;
+
+  &,
+  &__inner {
+    display: flex;
+    gap: $gap;
+  }
+
+  &__btn,
+  &__item a,
+  &__item span {
+    width: 26px;
+    height: 24px;
+    background: $btn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -0.01em;
+    border: 1px solid $decor;
+  }
+
+  &__btn,
+  &__item a {
+
+    @include hover {
+      border-color: $accent;
+      background: $accent;
+      color: $light;
+      border-radius: 4px;
+    }
+
+  }
+
+  &__item span {
+    border-color: $accent;
+    background: $accent;
+    color: $light;
+    border-radius: 4px;
+  }
+}

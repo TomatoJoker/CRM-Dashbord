@@ -5,11 +5,15 @@ $transparent: rgba(255, 255, 255, 0);
 $light-text: #b5b7c0;
 $middle-text: #9197b3;
 $accent: #5932ea;
+$subtitle-color: #16C098;
 $seconded: #fafbff;
 $success: #00B087;
 $success-alpha: rgba(22, 192, 152, 0.38);
 $danger: #df0404;
 $danger-alpha: #ffc5c5;
+$input-bg: #f9fbff;
+$decor: #EEEEEE;
+$btn: #f5f5f5;
 
 $speed: 300ms;
 $time-function: ease-in-out;
@@ -22,7 +26,8 @@ $time-function: ease-in-out;
 }
 
 //layout
+$header-width: 306px;
 $padding: 20px;
-$desktop-width: 1642px;
+$desktop-width: 968px;
 $site-container: $desktop-width + ($padding * 2);
 

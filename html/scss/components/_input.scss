@@ -1,0 +1,23 @@
+.input {
+  $pt: 8px;
+  $pl: 7px;
+  background: $input-bg;
+  border-radius: 10px;
+  max-width: 216px;
+  padding: $pl $pt;
+  position: relative;
+
+  &__item {
+    width: calc(100% - #{$pl} - 3px - 24px);
+    margin-left: auto;
+    display: block;
+  }
+
+  &__btn {
+    position: absolute;
+    left: $pt;
+    top: $pl;
+    width: 24px;
+    height: 24px;
+  }
+}

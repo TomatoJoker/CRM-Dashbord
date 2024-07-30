@@ -1,0 +1,140 @@
+.dashboard-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  $inner-paddingX: 30px;
+
+  &__main-title {
+
+    &:not(:last-child) {
+      margin-bottom: 55px;
+    }
+
+  }
+
+  &__subtitle {
+    margin-top: 7px;
+    color: $subtitle-color;
+  }
+
+  &__inner {
+
+    background: $light;
+    border-radius: 30px;
+    padding: 38px 0;
+    margin-top: 28px;
+
+    @include min-media(1200) {
+      margin-top: 53px;
+    }
+
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: $inner-paddingX;
+    padding-right: $inner-paddingX;
+  }
+
+  &__bottom {
+    overflow: auto;
+
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+    
+  }
+
+  &__table {
+    display: block;
+
+    td {
+      padding: 0;
+    }
+
+  }
+
+  &__heading-wrapper {
+    padding: 0px $padding;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $decor;
+    font-weight: 500;
+    color: $light-text;
+
+    @include min-media(1200) {
+      padding: 0px $inner-paddingX;
+    }
+  }
+
+  &__table {
+    text-align: left;
+
+    thead,
+    tbody {
+      width: 100%;
+      display: block;
+    }
+
+  }
+
+  &__content {
+    padding: 20px 0px;
+    border-bottom: 1px solid $decor;
+    max-width: calc(100% - #{$padding} * 2);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include min-media(768) {
+      max-width: calc(100% - #{$inner-paddingX} * 2);
+    }
+  }
+
+  &__content-item {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    a {
+
+      @include hover {
+
+        color: $accent;
+
+      }
+
+    }
+  }
+
+  &__pagination-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 $padding;
+
+    @include min-media(768) {
+      flex-direction: row;
+    }
+
+    @include min-media(1200) {
+      padding: 0 $inner-paddingX;
+    }
+
+    p {
+      letter-spacing: -0.01em;
+      color: $light-text;
+    }
+
+    &:not(:first-child) {
+      margin-top: 20px;
+
+      @include min-media(1200) {
+        margin-top: 40px;
+      }
+    }
+
+  }
+
+}
