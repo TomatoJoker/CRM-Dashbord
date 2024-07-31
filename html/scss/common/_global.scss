@@ -65,13 +65,23 @@ h6, .h6-title {
 
 .wrapper {
   display: flex;
-  flex-direction: row;
   min-height: 100vh;
   overflow: hidden;
+  flex-direction: column;
+
+  @include min-media(1200) {
+    flex-direction: row;
+  }
 }
 
 .main-wrapper {
-  flex: 1 0 auto;
+  width: 100%;
+  flex-grow: 1;
+
+  @include min-media(1200) {
+    max-width: calc(100% - #{$header-width});
+    flex-grow: 0;
+  }
 }
 
 .button__full-reset {
@@ -121,4 +131,10 @@ h6, .h6-title {
     font-size: 10px;
     letter-spacing: -0.01em;
   }
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: calc(115px + 37px) calc(70px + 41px) calc(104px + 32px) calc(141px + 41px) calc(118px + 27px) 80px;
 }

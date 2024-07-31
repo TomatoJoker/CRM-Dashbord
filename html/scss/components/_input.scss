@@ -11,13 +11,24 @@
     width: calc(100% - #{$pl} - 3px - 24px);
     margin-left: auto;
     display: block;
+    background: $transparent;
+    height: 24px;
+    font-size: 12px;
+
+    @include placeholder {
+      color: $light-text;
+      opacity: 1;
+    }
   }
 
   &__btn {
     position: absolute;
-    left: $pt;
-    top: $pl;
-    width: 24px;
-    height: 24px;
+    left: 0;
+    top: 0;
+    width: calc(24px + #{$pl} * 2);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

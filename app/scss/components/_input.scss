@@ -23,9 +23,12 @@
 
   &__btn {
     position: absolute;
-    left: $pt;
-    top: $pl;
-    width: 24px;
-    height: 24px;
+    left: 0;
+    top: 0;
+    width: calc(24px + #{$pl} * 2);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

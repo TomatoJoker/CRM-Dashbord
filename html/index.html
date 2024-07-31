@@ -9,12 +9,12 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./images/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/x-icon" sizes="32x32" href="./images/favicon/favicon-32x32.png"/>
   <link rel="icon" type="image/x-icon" sizes="16x16" href="./images/favicon/favicon-16x16.png"/>
-  <link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="">
-  <link rel="preload" href="/fonts/Montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="/fonts/Montserrat/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin="">
-  <link rel="preload" href="/fonts/Montserrat/Montserrat-Medium2.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="/fonts/Montserrat/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin="">
-  <link rel="preload" href="/fonts/Montserrat/Montserrat-SemiBold2.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="/fonts/Poppins/Poppins-Regular.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="/fonts/Poppins/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="/fonts/Poppins/Poppins-Medium.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="/fonts/Poppins/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="/fonts/Poppins/Poppins-SemiBold.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="/fonts/Poppins/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin="">
   
     <link rel="stylesheet" type="text/css" href="./css/vendors/your-name-vendor-style-name.min.css">
   
@@ -25,79 +25,80 @@
 
     <div class="wrapper">
         <header class="header">
-    <div class="header__container container">
-        <div class="header__inner">
-            <nav class="header__top">
+    <button class="header__burger button__full-reset js-burger" type="button" aria-label="burger button" aria-expanded="false">
+        <span></span>
+    </button>
+    <div class="header__inner js-mob-menu">
+        <nav class="header__top">
                 <span class="logo">
                     <img src="./images/logo.svg" width="37" height="37" alt="">
                     <span class="logo__name">Dashboard</span>
                     <span class="logo__version">v.01</span>
                 </span>
+            
+            <ul class="menu">
                 
-                <ul class="menu">
-                    
-                        <li class="menu__item">
-                            <a href="#">
-                                <svg class="icon" width="24" height="24">
-                                    <use href="./images/sprite.svg#key-square"></use>
-                                </svg>
-                                Customers
-                            </a>
-                        </li>
-                    
-                        <li class="menu__item">
-                            <a href="#">
-                                <svg class="icon" width="24" height="24">
-                                    <use href="./images/sprite.svg#3d-square"></use>
-                                </svg>
-                                Customers
-                            </a>
-                        </li>
-                    
-                        <li class="menu__item">
-                            <a href="#">
-                                <svg class="icon" width="24" height="24">
-                                    <use href="./images/sprite.svg#user-square"></use>
-                                </svg>
-                                Customers
-                            </a>
-                        </li>
-                    
-                        <li class="menu__item">
-                            <a href="#">
-                                <svg class="icon" width="24" height="24">
-                                    <use href="./images/sprite.svg#wallet-money"></use>
-                                </svg>
-                                Customers
-                            </a>
-                        </li>
-                    
-                        <li class="menu__item">
-                            <a href="#">
-                                <svg class="icon" width="24" height="24">
-                                    <use href="./images/sprite.svg#discount-shape"></use>
-                                </svg>
-                                Customers
-                            </a>
-                        </li>
-                    
-                        <li class="menu__item">
-                            <a href="#">
-                                <svg class="icon" width="24" height="24">
-                                    <use href="./images/sprite.svg#message-question"></use>
-                                </svg>
-                                Customers
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-            <div class="header__account">
-                <img class="header__account-img" width="42" height="42" src="./images/men.png" alt="">
-                <div class="header__account-name">
-                    <span class="header__name">Evano</span>
-                    <span class="header__position">Project Manager</span>
-                </div>
+                    <li class="menu__item">
+                        <a href="#">
+                            <svg class="icon" width="24" height="24">
+                                <use href="./images/sprite.svg#key-square"></use>
+                            </svg>
+                            Customers
+                        </a>
+                    </li>
+                
+                    <li class="menu__item">
+                        <a href="#">
+                            <svg class="icon" width="24" height="24">
+                                <use href="./images/sprite.svg#3d-square"></use>
+                            </svg>
+                            Customers
+                        </a>
+                    </li>
+                
+                    <li class="menu__item">
+                        <a href="#">
+                            <svg class="icon" width="24" height="24">
+                                <use href="./images/sprite.svg#user-square"></use>
+                            </svg>
+                            Customers
+                        </a>
+                    </li>
+                
+                    <li class="menu__item">
+                        <a href="#">
+                            <svg class="icon" width="24" height="24">
+                                <use href="./images/sprite.svg#wallet-money"></use>
+                            </svg>
+                            Customers
+                        </a>
+                    </li>
+                
+                    <li class="menu__item">
+                        <a href="#">
+                            <svg class="icon" width="24" height="24">
+                                <use href="./images/sprite.svg#discount-shape"></use>
+                            </svg>
+                            Customers
+                        </a>
+                    </li>
+                
+                    <li class="menu__item">
+                        <a href="#">
+                            <svg class="icon" width="24" height="24">
+                                <use href="./images/sprite.svg#message-question"></use>
+                            </svg>
+                            Customers
+                        </a>
+                    </li>
+                
+            </ul>
+        </nav>
+        <div class="header__account">
+            <img class="header__account-img" width="42" height="42" src="./images/men.png" alt="">
+            <div class="header__account-name">
+                <span class="header__name">Evano</span>
+                <span class="header__position">Project Manager</span>
             </div>
         </div>
     </div>
@@ -196,7 +197,7 @@
                                 
                                     <tr class="dashboard-section__content grid">
                                         <td class="dashboard-section__content-item grid__name">Jerome Bell</td>
-                                        <td class="dashboard-section__content-item grid__company">`Google</td>
+                                        <td class="dashboard-section__content-item grid__company">Google</td>
                                         <td class="dashboard-section__content-item grid__number">(629) 555-0129</td>
                                         <td class="dashboard-section__content-item grid__email"><a href="mailto:jerome@google.com">jerome@google.com</a></td>
                                         <td class="dashboard-section__content-item grid__country">Réunion</td>
